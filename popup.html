@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FocusPlus</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="header">
+    <a href="https://github.com/AxelTeam007/FocusPlus" target="_blank">
+      <img src="icons/extension-logo.png" alt="Extension Logo" id="extension-logo">
+    </a>
+    <h1>FocusPlus</h1>
+  </div>
+
+  <div id="theme-switch">
+    <label class="switch">
+      <input type="checkbox" id="theme-checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <h1>Chronomètre</h1>
+
+  <div id="timer">00:00:00</div>
+  <button id="start">Démarrer</button>
+  <button id="pause">Pause</button>
+  
+  <div id="youtube-filter">
+    <img src="icons/youtube-logo.png" alt="YouTube Logo" id="youtube-logo">
+    <label>
+      <input type="checkbox" id="youtube-filter-checkbox">
+      Supprimer les recommandations
+    </label>
+  </div>
+
+  <div id="x-filter">
+    <img src="icons/x-logo.png" alt="X Logo" id="x-logo">
+    <label>
+      <input type="checkbox" id="x-filter-checkbox">
+      Désactiver X
+    </label>
+  </div>
+  
+  <div id="tiktok-filter">
+    <img src="icons/tiktok-logo.png" alt="TikTok Logo" id="tiktok-logo">
+    <label>
+      <input type="checkbox" id="tiktok-filter-checkbox">
+      Désactiver TikTok
+    </label>
+  </div>
+
+  <div id="notion-link">
+    <img src="icons/notion-logo.png" alt="Notion Logo" id="notion-logo">
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

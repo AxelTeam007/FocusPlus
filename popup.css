@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+#theme-switch {
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px; /* Reduced width */
+  height: 20px; /* Reduced height */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px; /* Adjusted for reduced height */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; /* Reduced height */
+  width: 16px; /* Reduced width */
+  left: 2px; /* Adjusted for reduced width */
+  bottom: 2px; /* Adjusted for reduced height */
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px); /* Adjusted for reduced width */
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#extension-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#timer {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#pause {
+  display: none; /* Hide the pause button initially */
+}
+
+#youtube-filter, #x-filter, #tiktok-filter, #theme-switch {
+  margin-top: 20px;
+}
+
+#youtube-logo, #x-logo, #tiktok-logo {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+}
+
+#notion-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#notion-logo {
+  width: 40px;
+  cursor: pointer;
+}
+
+/* Removed styles for Focus button and exit fullscreen cross */
